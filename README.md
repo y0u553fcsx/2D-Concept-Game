@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cover.png" alt="2D Concept Game — pixel-art platformer banner with the white player character and teal enemy" width="100%">
+  <img src="docs/cover.png" alt="2D Concept Game — pixel-art platformer banner with the white player character and teal enemy" width="100%">
 </p>
 
 <h1 align="center">2D Concept Game</h1>
