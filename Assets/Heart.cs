@@ -10,9 +10,13 @@ public class Heart : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            PlayerStats.lives++;
-            AudioManager.Instance.PlayMusicSFX(heartSound);
-            Destroy(gameObject);
+            PlayerStats stats = other.GetComponent<PlayerStats>();
+
+            if (stats != null && stats.Heal(1))   // heal 1 health point
+            {
+                AudioManager.Instance.PlayMusicSFX(heartSound);
+                Destroy(gameObject);
+            }
         }
     }
     // Start is called before the first frame update
