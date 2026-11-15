@@ -79,7 +79,8 @@ public class PlayerStats : MonoBehaviour
             else if (lives == 0 && health == 0)
             {
                 Debug.Log("Game Over");
-                SceneManager.LoadScene(2);
+                Time.timeScale = 0f;
+                SceneManager.LoadScene(2, LoadSceneMode.Additive);
             }
             Debug.Log("Player Health: " + health.ToString());
             Debug.Log("Player Lives: " + lives.ToString());
