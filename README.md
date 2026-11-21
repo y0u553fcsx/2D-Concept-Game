@@ -37,6 +37,19 @@ I started this project to get more hands-on with Unity instead of just reading a
 | Zoom the camera | Mouse wheel |
 | Talk to RedHood | Walk up to RedHood, then click **Next** after each line appears |
 
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><a href="docs/screenshots/checkpoint-shot.png"><img src="docs/screenshots/checkpoint-shot.png" alt="Bobby fires a blue bullet toward an enemy beside the first checkpoint"></a><br>Firing from the checkpoint</td>
+    <td width="50%"><a href="docs/screenshots/platform-patrol.png"><img src="docs/screenshots/platform-patrol.png" alt="Bobby jumps beside a moving platform over the lake as a teal enemy patrols near a flag"></a><br>Jumping past the lakeside patrol</td>
+  </tr>
+  <tr>
+    <td><a href="docs/screenshots/redhood-dialogue.png"><img src="docs/screenshots/redhood-dialogue.png" alt="RedHood greets Bobby in a dialogue box with a Next button"></a><br>Meeting RedHood</td>
+    <td><a href="docs/screenshots/title-screen.png"><img src="docs/screenshots/title-screen.png" alt="The title screen shows Start Game and Quit against a pale sky"></a><br>Title screen</td>
+  </tr>
+</table>
+
 ## What's in it so far?
 
 - **Dialogue.** RedHood and Bobby's conversation appears a letter at a time. Bobby stands still until you finish the exchange.
