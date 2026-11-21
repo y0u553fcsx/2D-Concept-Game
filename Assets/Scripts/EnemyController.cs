@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float maxSpeed = 2f;
     public int damage = 1;
     public SpriteRenderer sr;
+    public int health = 3;
 
     private bool playerTouching = false;
 
@@ -30,7 +31,7 @@ public class EnemyController : MonoBehaviour
                 playerTouching = true;
             }
         }
-    
+
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -38,6 +39,18 @@ public class EnemyController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerTouching = false;
+        }
+    }
+
+    public void EnemyTakeDamage(int damage)
+    {
+        health -= damage;          // subtract the bullet's damage
+
+        if (health <= 0)
+        {
+            health = 0;
+            Debug.Log("Enemy Finished");
+            Destroy(gameObject);   // remove the enemy
         }
     }
 }
